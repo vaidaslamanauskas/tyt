@@ -1,0 +1,129 @@
+.Carousel {
+  overflow: hidden;
+  width: 100%;
+  padding-top: 50%;
+  padding-bottom: 48px;
+  text-align: center;
+  background-image:
+  linear-gradient(
+  rgba(black, 0.1),
+  rgba(black, 0.9)
+  ),
+  url('../img/css/carousel--medium.jpg');
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+          background-size: cover;
+  background-position: center center;
+
+  @media screen and (min-width: 720px) {
+    background-image:
+    linear-gradient(
+    rgba(black, 0.1),
+    rgba(black, 0.9)
+    ),
+    url('../img/css/carousel--large.jpg');
+  }
+}
+
+
+
+  .Carousel-paneGroup {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    display: table;
+    width: 500%;
+    overflow: hidden;
+    -webkit-filter: blur(0);
+       -moz-filter: blur(0);
+            filter: blur(0);
+    -webkit-animation: carousel 45s alternate infinite;
+       -moz-animation: carousel 45s alternate infinite;
+            animation: carousel 45s alternate infinite;
+
+    &:hover {
+      -webkit-animation-play-state: paused;
+         -moz-animation-play-state: paused;
+              animation-play-state: paused;
+    }
+
+  }
+
+
+
+    .Carousel-pane {
+      position: relative;
+      display: table-cell;
+      vertical-align: middle;
+      width: 20%;
+    }
+
+
+
+  .Carousel-quote {
+    max-width: 26em;
+    padding: 0 12px;
+    text-indent: 0;
+    margin: 0 auto;
+    color: white;
+    font-weight: 300;
+
+    @media screen and (min-width: 720px) {
+      @include font-size(32px, 1.4);
+    }
+
+  }
+
+
+
+@-webkit-keyframes carousel {
+  0%,
+  17.5%       { -webkit-transform: translate3d(   0 , 0, 0); -webkit-filter: blur(0  ); }
+  20.625%,
+  38.125%     { -webkit-transform: translate3d( -20%, 0, 0); -webkit-filter: blur(0  ); }
+  41.25%,
+  58.75%      { -webkit-transform: translate3d( -40%, 0, 0); -webkit-filter: blur(0  ); }
+  61.875%,
+  79.375%     { -webkit-transform: translate3d( -60%, 0, 0); -webkit-filter: blur(0  ); }
+  82.5%,
+  100%        { -webkit-transform: translate3d( -80%, 0, 0); -webkit-filter: blur(0  ); }
+  19.0625%,
+  39.6875%,
+  60.3125%,
+  80.9375%    {                                              -webkit-filter: blur(2px); }
+}
+
+@-moz-keyframes carousel {
+  0%,
+  17.5%       { -webkit-transform: translate3d(   0 , 0, 0); -webkit-filter: blur(0  ); }
+  20.625%,
+  38.125%     { -webkit-transform: translate3d( -20%, 0, 0); -webkit-filter: blur(0  ); }
+  41.25%,
+  58.75%      { -webkit-transform: translate3d( -40%, 0, 0); -webkit-filter: blur(0  ); }
+  61.875%,
+  79.375%     { -webkit-transform: translate3d( -60%, 0, 0); -webkit-filter: blur(0  ); }
+  82.5%,
+  100%        { -webkit-transform: translate3d( -80%, 0, 0); -webkit-filter: blur(0  ); }
+  19.0625%,
+  39.6875%,
+  60.3125%,
+  80.9375%    {                                              -webkit-filter: blur(2px); }
+}
+
+@keyframes carousel {
+  0%,
+  17.5%       { -webkit-transform: translate3d(   0 , 0, 0); -webkit-filter: blur(0  ); }
+  20.625%,
+  38.125%     { -webkit-transform: translate3d( -20%, 0, 0); -webkit-filter: blur(0  ); }
+  41.25%,
+  58.75%      { -webkit-transform: translate3d( -40%, 0, 0); -webkit-filter: blur(0  ); }
+  61.875%,
+  79.375%     { -webkit-transform: translate3d( -60%, 0, 0); -webkit-filter: blur(0  ); }
+  82.5%,
+  100%        { -webkit-transform: translate3d( -80%, 0, 0); -webkit-filter: blur(0  ); }
+  19.0625%,
+  39.6875%,
+  60.3125%,
+  80.9375%    {                                              -webkit-filter: blur(2px); }
+}

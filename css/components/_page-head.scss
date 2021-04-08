@@ -1,0 +1,40 @@
+.PageHead {
+  background: transparent;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  overflow: hidden;
+  text-align: left;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+
+
+  .PageHead-logo {
+    display: block;
+    margin-bottom: 24px;
+    text-align: center;
+
+    > img {
+      vertical-align: bottom;
+    }
+
+  }
+
+  @media screen and (min-width: 720px) {
+
+    .PageHead-logo {
+      float: left;
+      margin-bottom: 0;
+    }
+
+  }
+
+
+
+.PageHead--filled {
+  background: rgba(black, 0.9);
+  position: relative;
+}

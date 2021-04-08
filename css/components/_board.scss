@@ -1,0 +1,27 @@
+.Board {
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background: rgba(black, 0.9);
+  border-bottom: 4px solid $dominant-color;
+
+  @media screen and (min-width: 720px) {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+}
+
+
+
+  .Board-title {
+    position: relative;
+    margin-top: 24px;
+    @include font-size(38px);
+    font-weight: 700;
+    color: white;
+    text-align: center;
+
+    @media screen and (min-width: 720px) {
+      @include font-size(58px);
+    }
+  }

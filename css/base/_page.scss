@@ -1,0 +1,27 @@
+/**
+ * High-, page-level styling.
+ *
+ * 1. Set the default 'font-family' for entire theme.
+ *    [Tip] Only select the font styles that you actually need on your webpage.
+ * 2. Set the default `font-size` and `line-height` for the entire theme.
+ * 3. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
+ *    navigating between pages that do/do not have enough content to produce
+ *    scrollbars naturally.
+ * 4. Ensure the page always fills at least the entire height of the viewport.
+ * 5. Prevent certain mobile browsers from automatically zooming fonts.
+ * 6. Fonts on OSX will look more consistent with other systems that do not
+ *    render text using sub-pixel anti-aliasing.
+ */
+html {
+  font-family: "Open Sans", sans-serif; /* 1 */
+  font-size: ($base-font-size / 16px) * 1em; /* 2 */
+  line-height: $base-line-height / $base-font-size; /* 2 */
+  background-color: #fafafa;
+  color: #212121;
+  overflow-y: scroll; /* 3 */
+  min-height: 100%; /* 4 */
+  -webkit-text-size-adjust: 100%; /* 5 */
+      -ms-text-size-adjust: 100%; /* 5 */
+  -moz-osx-font-smoothing: grayscale; /* 6 */
+  -webkit-font-smoothing: antialiased; /* 6 */
+}

@@ -1,0 +1,57 @@
+.MastHead {
+  position: relative;
+  min-height: 75%;
+  background-image: url('../img/css/masthead.jpg');
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+          background-size: cover;
+  background-position: center center;
+  border-bottom: 4px solid $dominant-color;
+
+  @media screen and (min-width: 720px) {
+    background-image: url('../img/css/masthead--medium.jpg');
+    min-height: 90%;
+  }
+
+  @media screen and (min-width: 1024px) {
+    background-image: url('../img/css/masthead--large.jpg');
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image:
+      linear-gradient(
+      rgba(black, 0.2),
+      rgba(black, 0.75)
+      );
+  }
+}
+
+
+
+  .MastHead-title {
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #fff;
+    @include font-size(38px, 1);
+    z-index: 1;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+
+    @media screen and (min-width: 720px) {
+      @include font-size(54px);
+    }
+
+    @media screen and (min-width: 1024px) {
+      @include font-size(78px);
+    }
+  }

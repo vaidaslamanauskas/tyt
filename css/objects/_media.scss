@@ -1,0 +1,33 @@
+/**
+ * Place any image- and text-like content side-by-side.
+ *
+ * stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code
+ */
+.Media {
+  display: block;
+}
+
+
+
+  .Media-image {
+    float: left;
+    margin-right: 24px;
+
+    > img {
+      display: block;
+    }
+
+  }
+
+
+
+  .Media-body {
+    overflow: hidden;
+    display: block;
+
+    &,
+    > :last-child {
+      margin-bottom: 0;
+    }
+    
+  }

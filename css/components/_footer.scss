@@ -1,0 +1,33 @@
+.Footer {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background: white;
+  text-align: center;
+
+  @media screen and (min-width: 720px) {
+    text-align: left;
+  }
+}
+
+
+
+  .Footer-link {
+    display: inline-block;
+    padding: 12px 12px;
+    @include font-size(14px, 1);
+    font-weight: 600;
+    color: rgba(black, 0.5);
+
+    @media screen and (min-width: 720px) {
+      margin: 0 12px;
+    }
+  }
+
+
+
+  .Footer-legal {
+    @include font-size(14px);
+    padding: 24px 12px;
+    margin: 0 12px;
+    color: rgba(black, 0.3);
+  }

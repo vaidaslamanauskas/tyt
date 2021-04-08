@@ -1,0 +1,31 @@
+.ClientList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+
+
+  .ClientList-item {
+    display: inline-block;
+    padding: 12px;
+
+    @media screen and (min-width: 720px) {
+      padding: 24px;
+    }
+
+  }
+
+
+
+  .ClientList-logo {
+    background-color: transparent;
+    height: 48px;
+    opacity: 0.3;
+
+    @media screen and (min-width: 720px) {
+      height: 60px;
+    }
+
+  }

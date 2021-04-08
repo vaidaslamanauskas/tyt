@@ -1,0 +1,30 @@
+/**
+ * Not quite sure.
+ */
+.ShoutOut {
+  @include font-size(44px, 1.2);
+  font-weight: 300;
+  color: #212121;
+  margin-bottom: 0;
+
+  > strong {
+    color: $dominant-color;
+    font-weight: 700;
+  }
+
+  @media screen and (min-width: 720px) {
+    @include font-size(64px, 1.2);
+  }
+}
+
+
+
+.ShoutOut-textBlock {
+  @include font-size(20px, 1.2);
+  color: rgba(black, 0.35);
+  font-weight: 400;
+
+  @media screen and (min-width: 720px) {
+    @include font-size(22px, 1.3)
+  }
+}

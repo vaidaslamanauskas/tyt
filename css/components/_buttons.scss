@@ -1,0 +1,28 @@
+.Button {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  @include font-size(16px, 1);
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  margin: 0;
+  cursor: pointer;
+  overflow: visible;
+  padding: 20px 34px;
+  background-color: $dominant-color;
+  border-radius: 1px;
+  -webkit-transition: 0.3s;
+     -moz-transition: 0.3s;
+          transition: 0.3s;
+
+  &:hover {
+    text-decoration: none;
+    background-color: rgba($dominant-color, 0.9);
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}

@@ -1,0 +1,45 @@
+/**
+ * Headings 1–6, with corresponding Greek-alphabet abstract classes for double-
+ * stranded heading hierarchy.
+ *
+ * csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
+ */
+h1,
+.alpha {
+  @include font-size($heading-size-1);
+}
+
+
+
+h2,
+.beta {
+  @include font-size($heading-size-2);
+}
+
+
+
+h3,
+.gamma {
+  @include font-size($heading-size-3);
+}
+
+
+
+h4,
+.delta {
+  @include font-size($heading-size-4);
+}
+
+
+
+h5,
+.epsilon {
+  @include font-size($heading-size-5);
+}
+
+
+
+h6,
+.zeta {
+  @include font-size($heading-size-6);
+}

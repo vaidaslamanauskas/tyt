@@ -1,0 +1,80 @@
+/**
+ * Begin a layout group.
+ */
+.Layout {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: -24px;
+}
+
+
+
+  /**
+   * 1. Cause columns to stack side-by-side.
+   * 2. Space columns apart.
+   * 3. Align columns to the tops of each other.
+   * 4. Full-width unless told to behave otherwise.
+   */
+  .Layout-item {
+    display: inline-block; /* 1 */
+    padding-left: 24px; /* 2 */
+    vertical-align: top; /* 3 */
+    width: 100%; /* 4 */
+  }
+
+
+
+  /**
+   * Layouts with tiny gutters.
+   */
+  .Layout--tiny {
+    margin-left: -12px;
+
+    > .Layout-item {
+      padding-left: 12px;
+    }
+
+  }
+
+
+
+  /**
+   * Layouts with small gutters.
+   */
+  .Layout--small {
+    margin-left: -24px;
+
+    > .Layout-item {
+      padding-left: 24px;
+    }
+
+  }
+
+
+
+  /**
+   * Layouts with large gutters.
+   */
+  .Layout--large {
+    margin-left: -48px;
+
+    > .Layout-item {
+      padding-left: 48px;
+    }
+
+  }
+
+
+
+  /**
+   * Layouts with no gutters.
+   */
+  .Layout--flush {
+    margin-left: 0;
+
+    > .Layout-item {
+      padding-left: 0;
+    }
+
+  }

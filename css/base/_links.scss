@@ -1,0 +1,11 @@
+a {
+  text-decoration: none;
+  color: $dominant-color;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: underline;
+  }
+
+}

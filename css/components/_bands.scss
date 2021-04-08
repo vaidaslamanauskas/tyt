@@ -1,0 +1,53 @@
+.Band {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+}
+
+
+
+.Band--noBottom {
+  padding-bottom: 0;
+}
+
+
+
+.Band--large {
+  padding: 48px;
+}
+
+
+
+.Band--huge {
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+}
+
+
+
+.Band--light {
+  background-color: white;
+  border-bottom: 2px solid rgba(black, 0.075);
+}
+
+
+
+.Band--tint {
+  background-color: #f5f5f5;
+}
+
+
+
+.Band--dark {
+  background-color: rgba(black, 0.8);
+}
